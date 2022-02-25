@@ -12,7 +12,6 @@ public class Coche {
 	private int numPlazas;
 	
 	public Coche() {
-		//this.matricular(matricula);
 		this.marca="SEAT";
 		this.modelo="ALTEA";
 		this.color="blanco";
