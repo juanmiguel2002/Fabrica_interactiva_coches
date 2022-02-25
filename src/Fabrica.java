@@ -269,7 +269,7 @@ public class Fabrica {
 		Coche.numcoches++;
 		System.out.println("Este coche tiene los siguientes datos: "+caracteristicas(car1));
 	}
-	public static Coche buscarCoche(Vector vec, String matricula) {
+	private static Coche buscarCoche(Vector vec, String matricula) {
 		Coche c=null;
 		int posi = 0;
 		while(posi < vec.size() && c==null) {
@@ -281,7 +281,7 @@ public class Fabrica {
 		return c;
 	}
 	
-	public static String matAleatoria() {
+	private static String matAleatoria() {
 		String matricula="";
 		String letras ="BCDFGHJKLMNPQRSTVWXYZ";
 		for(int i=0;i<4;i++) {
